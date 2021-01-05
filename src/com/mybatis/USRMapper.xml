@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- com.dao.DeptDao对应Dao接口 -->
+<mapper namespace="com.dao.USRDao">
+    <insert id="insertUsr" parameterType="com.po.USR">
+		insert into USR(CSTID,LOGINN,DISN,PASS,SER,TOKEN,KBN,MAIL,INSERTDTE,INSERTID,UPDATEDTE,UPDATEID,DELETEFLG,DELETEDTE)
+		values
+		(#{cstid},#{loginn},#{disn},#{pass},1,1,1,#{mail},SYSTIMESTAMP,1,SYSTIMESTAMP,1,1,SYSTIMESTAMP)
+	</insert>
+
+
+</mapper>

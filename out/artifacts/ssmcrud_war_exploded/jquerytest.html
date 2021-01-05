@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery3.4.1.js"></script>
+    <script>
+
+        $(function () {
+
+            $("#username").blur(function () {
+                var use = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+                if ((use.test($("#username").val()) == false)) {
+                    $.ajax({
+                            success: function () {
+                                $("#div6").html("账号不合规则 请重新输入");
+                            }
+                        }
+                    )
+                } else {
+                    $.ajax({
+                            success: function () {
+                                $("#div6").html(" ");
+                            }
+                        }
+                    )
+                }
+
+            })
+            $("#password").blur(function () {
+                var psw = /^[a-z0-9_-]{6,18}$/;
+                if ((psw.test($("#password").val()) == false)) {
+                    $.ajax({
+                            success: function () {
+                                $("#div7").html("密码不合规则 请重新输入");
+                            }
+                        }
+                    )
+                } else {
+                    $.ajax({
+                            success: function () {
+                                $("#div7").html(" ");
+                            }
+                        }
+                    )
+                }
+
+            })
+
+
+
+        });
+    </script>
+
+</head>
+<body>
+用户名：<input type="text" name="username" id="username" value=""/>
+密码:<input type="password" name="password" id="password" value=""/>
+        <div id="div6" style="color: red"></div>
+        <div id="div7" style="color: red"></div>
+</body>
+</html>

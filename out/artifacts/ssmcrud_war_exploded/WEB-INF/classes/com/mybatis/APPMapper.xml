@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- com.dao.DeptDao对应Dao接口 -->
+<mapper namespace="com.dao.APPDao">
+    <insert id="insertApp" parameterType="com.po.APP">
+		insert into APP(MAIL,BER,PHO,SEIKJ,MEIKJ,SEIKN,MEIKN,SEIEN,MEIEN,CSTID,APPSTS,HNNFLG,KZKFLG,INSERTDTE,INSERTID,UPDATEDTE,UPDATEID,DELETEFLG,SEX,
+		JKYSBT,TEL,POST,KNC,JSKJ1,JSKJ2,JSKN1,JSKN2,SPGTORKBN,SPGKBN,CSGKBN,TORKBN,DRIVERID,KKHCD,HNNHHUCD,HGSUMK,SYOKBN,KZKMLFLG,CAMMLFLG,
+		GYOCD,KMS,KMSDEP,KMSTEL,KMSJS1,KMSJS2,NSHYM,NSG,BRDCD,CRDSHUCD,APPCD)
+
+		values
+		(#{mail},#{ber},#{pho},#{seikj},#{meikj},#{seikn},#{meikn},#{seien},#{meien},#{cstid},01,1,1,to_timestamp(to_char(sysdate,'DD-MON-YYYY HH12:MI:SS')),1,to_timestamp(to_char(sysdate,'DD-MON-YYYY HH12:MI:SS')),1,1,#{sex},
+		#{jkysbt},#{tel},#{post},#{knc},#{jskj1},#{jskj2},#{jskn1},#{jskn2},#{spgtorkbn},#{spgkbn},#{csgkbn},#{torkbn},#{driverid},#{kkhcd},#{hnnhhucd},#{hgsumk},#{syokbn},#{kzkmlflg},#{cammlflg},
+		#{gyocd},#{kms},#{kmsdep},#{kmstel},#{kmsjs1},#{kmsjs2},#{nshym},#{nsg},#{brdcd},#{crdshucd},#{appcd})
+	</insert>
+
+    <select id="selectID" resultType="java.lang.String">
+
+		SELECT LPAD(TO_CHAR(PRIKEY_tb_seq.nextval),4,'0') FROM DUAL
+
+	</select>
+    <update id="updateAPPC" parameterType="com.po.APP">
+        update APP
+        <set>
+            BANKCD = #{bankcd},BCHCD = #{bchcd},YKN = #{ykn},
+            ACTCD = #{actcd},ACTNAE = #{actnae}
+
+        </set>
+        where APPCD = #{appcd}
+    </update>
+    <update id="updateAPPB" parameterType="com.po.APP">
+        update APP
+        <set>
+            KZKSEIKJ=#{kzkseikj},KZKMEIKJ=#{kzkmeikj},KZKSEIKN=#{kzkseikn},KZKMEIKN=#{kzkmeikn},KZKSEIEN=#{kzkseien},KZKMEIEN=#{kzkmeien},
+            SEX=#{sex},KZKGYOCD=#{kzkgyocd},KZKKMS=#{kzkkms},KZKKMSDEP=#{kzkkmsdep},KZKKMSTEL=#{kzkkmstel},KZKHHUCD=#{kzkhhucd}
+        </set>
+        where APPCD = #{appcd}
+    </update>
+
+
+</mapper>
