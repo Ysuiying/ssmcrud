@@ -38,6 +38,7 @@ public class APPWC01 {
         } else if ("11".equals(syokbn)) {
             return "A1A01WB01A01_家族カード申込情報入力";
         }
+
         return "A1A01WA01A01_入会申込情報入力";
 
     }
@@ -82,7 +83,7 @@ public class APPWC01 {
         app.setKzkkmsdep(KZKKMSDEP);
         app.setKzkkmstel(KZKKMSTEL);
         app.setKzkhhucd(KZKHHUCD);
-        session.setAttribute("app",app);
+        session.setAttribute("app", app);
 
         return "A1A01WB01A11_家族カード申込情報確認";
     }

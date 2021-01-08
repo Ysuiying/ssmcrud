@@ -35,17 +35,18 @@
     </div>
 </nav>
 <form action="/backtoA1A01.action" method="post">
-<div class="jumbotron jumbotron-fluid text-center">
-    <h1 class="display-4">お申し込みの場合、必ずご確認ください</h1>
-    <hr>
-    <P>質問1　お申し込み対象について</P>
-    <p class="lead">お申し込み対象は18歳から60歳までのカードです。</p>
-    <P> 対象ですか？</p>
-    <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#abc" name="on" role="button" id="btn" onclick="change()">はい</a>
-        <button class="btn btn-primary btn-lg" type="submit">いいえ</button>
+    <div class="jumbotron jumbotron-fluid text-center">
+        <h1 class="display-4">お申し込みの場合、必ずご確認ください</h1>
+        <hr>
+        <P>質問1　お申し込み対象について</P>
+        <p class="lead">お申し込み対象は18歳から60歳までのカードです。</p>
+        <P> 対象ですか？</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#abc" name="on" role="button" id="btn" onclick="change()">はい</a>
+            <button class="btn btn-primary btn-lg" type="submit">いいえ</button>
 
-    </p></div>
+        </p>
+    </div>
 </form>
 <div class="jumbotron jumbotron-fluid text-center">
     <P>質問2　下をよくお読みのうえ、「同意のうえ、入力へ進む」ボタンを押してください。</P>

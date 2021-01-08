@@ -20,9 +20,9 @@ public class APPController {
 
     @RequestMapping("/jump.action")
     public String jump() {
-        
-        return "A1A01WA01A00_USER申込";
-      /*  return "A1A01WA01A01_入会申込情報入力";*/
+        /*
+        return "B1C01WM01_会員機能一覧";*/
+        return "A1A01WA01A01_入会申込情報入力";
     }
 
     @RequestMapping("/backtoA1C01.action")
@@ -173,7 +173,8 @@ public class APPController {
         session.setAttribute("sex", sex);
         app.setSex(sex);
         String ID = appService.selectID();
-        String appcd = ber + brdcd + crdshucd + ID;
+        String cstid1 = (String) session.getAttribute("cstid1");
+        String appcd = ber + brdcd + crdshucd + cstid1;
         String cstid = appcd;
         System.out.println("appcd:*****" + appcd);
         app.setCstid(cstid);

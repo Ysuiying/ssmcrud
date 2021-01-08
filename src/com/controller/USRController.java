@@ -25,16 +25,47 @@ public class USRController {
         String pass = request.getParameter("pass");
         String mail = request.getParameter("mail");
         String cstid = appService.selectID();
+        String ser = request.getParameter("ser");
+        String token = request.getParameter("token");
+        String kbn = request.getParameter("kbn");
         USR usr = new USR();
         usr.setLoginn(loginn);
+        usr.setSer(ser);
+        usr.setToken(token);
+        usr.setKbn(kbn);
         usr.setDisn(disn);
         usr.setPass(pass);
         usr.setMail(mail);
         usr.setCstid(cstid);
         session.setAttribute("USR", usr);
         System.out.println(usr);
-
         usrService.insertUsr(usr);
-        return "A1A01WA01A01_入会申込情報入力";
+        return "index";
     }
+
+    @RequestMapping(value = "/jumptoRes.action")
+    public String jumpresgin(HttpServletRequest request) {
+
+        return "A1A01WA01A00_USER申込";
+    }
+
+    @RequestMapping(value = "/jumptoChangePass.action")
+    public String jumpChangepass(HttpServletRequest request) {
+
+        return "B1A01WB01A01_パスワード変更";
+    }
+
+    @RequestMapping(value = "/jumptoChangeSer.action")
+    public String jumpChangeSer(HttpServletRequest request) {
+
+        return "B1A01WC01A01_本人認証サービス設定変更";
+    }
+
+    @RequestMapping(value = "/jumptoB1C01WM01.action")
+    public String jumptoB1C01WM01(HttpServletRequest request) {
+
+        return "B1C01WM01_会員機能一覧";
+    }
+
+
 }

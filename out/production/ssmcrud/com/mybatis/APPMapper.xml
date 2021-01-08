@@ -37,6 +37,11 @@
         </set>
         where APPCD = #{appcd}
     </update>
+    <select id="selectNameBycstid" resultType="java.lang.String">
+
+		select SEIKJ from APP where substr(CSTID,13,16) = ${_parameter}
+
+	</select>
 
 
 </mapper>

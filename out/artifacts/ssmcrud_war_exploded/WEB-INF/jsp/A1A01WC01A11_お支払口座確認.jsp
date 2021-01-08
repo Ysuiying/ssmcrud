@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html lang="en">
@@ -11,13 +10,18 @@
     <link href="../../css/bootstrap-4.0.0.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand" href="#">カードサイト</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-    <div class="collapse navbar-collapse" >
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <form action="/jumptoB1C01WM01.action">
+        <a class="navbar-brand">カードサイト</a>
+    </form>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item"> <a class="nav-link" href="#">お手続き <span class="sr-only"></span></a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">お問い合わせ</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">加盟店のお客様</a> </li>
+            <li class="nav-item"><a class="nav-link" href="#">お手続き <span class="sr-only"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#">お問い合わせ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">加盟店のお客様</a></li>
         </ul>
     </div>
 </nav>
@@ -26,7 +30,7 @@
     <P class="card-text">お支払口座登録・変更情報のご確認</p>
 </div>
 <div class="container">
-    <div class="row text-center"> </div>
+    <div class="row text-center"></div>
     <hr>
     <div class="row card-header">お支払口座について</div>
     <div class="container">
@@ -35,24 +39,24 @@
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">金融機関名</li>
-                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif"
+                                                      alt="必須"></li>
                 </ul>
                 </p>
             </div>
             <div class="col-5 bg-lemonchiffon">
                 <label><%
-                    if ("0005".equals(session.getAttribute("bankcd"))){
+                    if ("0005".equals(session.getAttribute("bankcd"))) {
                 %> 三菱ＵＦＪ銀行<%
-                }else if ("0009".equals(session.getAttribute("bankcd"))){ %>
+                } else if ("0009".equals(session.getAttribute("bankcd"))) { %>
                     三井住友銀行<%
-                    }else if ("0001".equals(session.getAttribute("bankcd"))){
+                    } else if ("0001".equals(session.getAttribute("bankcd"))) {
                     %>
                     みずほ銀行<%
-                    }else if ("0010".equals(session.getAttribute("bankcd"))){
+                    } else if ("0010".equals(session.getAttribute("bankcd"))) {
                     %>
                     りそな銀行<%
-                    }
-                    else {%>
+                    } else {%>
                     埼玉りそな銀行 <%
                         }
                     %></label>
@@ -66,12 +70,14 @@
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">支店・出張所コード</li>
-                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif"
+                                                      alt="必須"></li>
                 </ul>
                 </p>
             </div>
             <div class="col-4 bg-lemonchiffon">
-                <label><%=session.getAttribute("bchcd")%></label>
+                <label><%=session.getAttribute("bchcd")%>
+                </label>
             </div>
             <div class="col-5 bg-lemonchiffon"></div>
         </div>
@@ -81,19 +87,20 @@
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">預金種別</li>
-                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif"
+                                                      alt="必須"></li>
                 </ul>
                 </p>
             </div>
             <div class="col-4 bg-lemonchiffon">
                 <label><%
-                    if ("0".equals(session.getAttribute("ykn"))){
+                    if ("0".equals(session.getAttribute("ykn"))) {
                 %> 普通預金<%
-                }else { %>
+                } else { %>
                     当座<%
                         }%></label>
             </div>
-            <div class="col-5 bg-lemonchiffon"> </div>
+            <div class="col-5 bg-lemonchiffon"></div>
         </div>
         <br>
         <div class="row">
@@ -101,12 +108,14 @@
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">口座番号</li>
-                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif"
+                                                      alt="必須"></li>
                 </ul>
                 </p>
             </div>
             <div class="col-4 bg-lemonchiffon">
-                <label><%=session.getAttribute("actcd")%></label>
+                <label><%=session.getAttribute("actcd")%>
+                </label>
             </div>
             <div class="col-5 bg-lemonchiffon"></div>
         </div>
@@ -116,12 +125,14 @@
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">口座名義人</li>
-                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif"
+                                                      alt="必須"></li>
                 </ul>
                 </p>
             </div>
             <div class="col-5 bg-lemonchiffon">
-                <label><%=session.getAttribute("actnae")%></label>
+                <label><%=session.getAttribute("actnae")%>
+                </label>
             </div>
             <div class="col-4 bg-lemonchiffon">
             </div>
@@ -130,10 +141,10 @@
     <hr>
     <div class="text-center">
         <div class="custom-control custom-radio custom-control-inline">
-            <p class="lead"> <a class="btn btn-danger btn-lg" href="/backtoA1C01.action" role="button">戻る</a> </p>
+            <p class="lead"><a class="btn btn-danger btn-lg" href="/backtoA1C01.action" role="button">戻る</a></p>
         </div>
         <div class="custom-control custom-radio custom-control-inline">
-            <p class="lead"> <a class="btn btn-danger btn-lg" href="/jumpcheck.action" role="button">確定</a> </p>
+            <p class="lead"><a class="btn btn-danger btn-lg" href="/jumpcheck.action" role="button">確定</a></p>
         </div>
     </div>
     <div class="row">

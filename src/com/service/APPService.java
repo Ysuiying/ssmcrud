@@ -16,4 +16,6 @@ public interface APPService {
     public void updateAPPC(APP app);
 
     public void updateAPPB(APP app);
+
+    public String selectNameBycstid(String cstid);
 }

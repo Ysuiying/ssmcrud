@@ -47,5 +47,10 @@ public class APPServiceImpl implements APPService {
         appDao.updateAPPB(app);
     }
 
+    @Override
+    public String selectNameBycstid(String cstid) {
+        return appDao.selectNameBycstid(cstid);
+    }
+
 
 }

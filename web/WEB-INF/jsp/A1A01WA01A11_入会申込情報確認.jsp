@@ -81,7 +81,8 @@
                 </ul>
             </div>
             <div class="col-4 bg-lemonchiffon">
-                <label><%=session.getAttribute("mail")%></label>
+                <label><%=session.getAttribute("mail")%>
+                </label>
             </div>
             <div class="col-6 bg-lemonchiffon"></div>
         </div>
@@ -97,7 +98,8 @@
                 </p>
             </div>
             <div class="col-4 bg-lemonchiffon">
-                <label><%=session.getAttribute("ber")%></label>
+                <label><%=session.getAttribute("ber")%>
+                </label>
             </div>
             <div class="col-6 bg-lemonchiffon"></div>
         </div>
@@ -113,7 +115,8 @@
                 </p>
             </div>
             <div class="col-4 bg-lemonchiffon">
-                <label><%=session.getAttribute("pho")%></label>
+                <label><%=session.getAttribute("pho")%>
+                </label>
             </div>
             <div class="col-6 bg-lemonchiffon"></div>
         </div>
@@ -133,11 +136,11 @@
             </div>
             <div class="col-4 bg-lemonchiffon">
                 <label><%
-                    if ("1".equals(session.getAttribute("kjnhjn"))){
-                       %> 個人 <%
-                    }else { %>
-                        法人 <%
-                    }%></label>
+                    if ("1".equals(session.getAttribute("kjnhjn"))) {
+                %> 個人 <%
+                } else { %>
+                    法人 <%
+                        }%></label>
 
             </div>
             <div class="col-6 bg-lemonchiffon"></div>
@@ -160,9 +163,11 @@
                     名</p>
             </div>
             <div class="col-3 bg-lemonchiffon">
-                <label><%=session.getAttribute("seikj")%></label>
+                <label><%=session.getAttribute("seikj")%>
+                </label>
                 <hr>
-                <label><%=session.getAttribute("meikj")%></label>
+                <label><%=session.getAttribute("meikj")%>
+                </label>
             </div>
             <div class="col-6 bg-lemonchiffon"></div>
         </div>
@@ -186,9 +191,11 @@
                     名</p>
             </div>
             <div class="col-3 bg-lemonchiffon">
-                <label><%=session.getAttribute("seikn")%></label>
+                <label><%=session.getAttribute("seikn")%>
+                </label>
                 <hr>
-                <label><%=session.getAttribute("meikn")%></label>
+                <label><%=session.getAttribute("meikn")%>
+                </label>
             </div>
             <div class="col-6 bg-lemonchiffon"></div>
         </div>
@@ -209,9 +216,11 @@
                     名</p>
             </div>
             <div class="col-3">
-                <label><%=session.getAttribute("seien")%></label>
+                <label><%=session.getAttribute("seien")%>
+                </label>
                 <hr>
-                <label><%=session.getAttribute("meien")%></label>
+                <label><%=session.getAttribute("meien")%>
+                </label>
             </div>
             <div class="col-6"></div>
         </div>
@@ -228,11 +237,11 @@
             </div>
             <div class="col-4 bg-lemonchiffon">
                 <P><%
-                    if ("1".equals(session.getAttribute("sex"))){
-                       %> 男性<%
-                    }else { %>
-                       女性<%
-                    }%></P>
+                    if ("1".equals(session.getAttribute("sex"))) {
+                %> 男性<%
+                } else { %>
+                    女性<%
+                        }%></P>
             </div>
             <div class="col-6 bg-lemonchiffon"></div>
         </div>
@@ -263,16 +272,16 @@
             <div class="col-4 bg-lemonchiffon">
                 <div class="form-group">
                     <label><%
-                        if ("1".equals(session.getAttribute("JKYSBT"))){
+                        if ("1".equals(session.getAttribute("JKYSBT"))) {
                     %> 本人持家<%
-                    }else if ("2".equals(session.getAttribute("JKYSBT"))){ %>
+                    } else if ("2".equals(session.getAttribute("JKYSBT"))) { %>
                         家族持家<%
-                    }else if ("3".equals(session.getAttribute("JKYSBT"))){
+                        } else if ("3".equals(session.getAttribute("JKYSBT"))) {
                         %>
                         借家・賃貸マンション<%
-                    }else {%>
+                        } else {%>
                         その他 <%
-                    }
+                            }
                         %></label>
                 </div>
             </div>
@@ -288,7 +297,8 @@
                 </P>
             </div>
             <div class="col-4">
-                <label><%=session.getAttribute("TEL")%></label>
+                <label><%=session.getAttribute("TEL")%>
+                </label>
             </div>
             <div class="col-6"></div>
         </div>
@@ -304,7 +314,8 @@
                 </p>
             </div>
             <div class="col-4 bg-lemonchiffon">
-                <label><%=session.getAttribute("POST")%></label>
+                <label><%=session.getAttribute("POST")%>
+                </label>
             </div>
             <div class="col-6 bg-lemonchiffon"></div>
         </div>
@@ -322,99 +333,99 @@
             <div class="col-4 bg-lemonchiffon">
                 <div class="form-group">
                     <label>
-                        <%if ("001".equals(session.getAttribute("KNC"))){%>
+                        <%if ("001".equals(session.getAttribute("KNC"))) {%>
                         北海道
-                        <%}else if ("002".equals(session.getAttribute("KNC"))){ %>
+                        <%} else if ("002".equals(session.getAttribute("KNC"))) { %>
                         青森県
-                        <%}else if ("003".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("003".equals(session.getAttribute("KNC"))) {%>
                         岩手県
-                        <%}else if ("004".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("004".equals(session.getAttribute("KNC"))) {%>
                         宮城県
-                        <%}else if ("005".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("005".equals(session.getAttribute("KNC"))) {%>
                         秋田県
-                        <%}else if ("006".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("006".equals(session.getAttribute("KNC"))) {%>
                         山形県
-                        <%}else if ("007".equals(session.getAttribute("KNC"))){ %>
+                        <%} else if ("007".equals(session.getAttribute("KNC"))) { %>
                         福島県
-                        <%}else if ("008".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("008".equals(session.getAttribute("KNC"))) {%>
                         茨城県
-                        <%}else if ("009".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("009".equals(session.getAttribute("KNC"))) {%>
                         枥木県
-                        <%}else if ("010".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("010".equals(session.getAttribute("KNC"))) {%>
                         群馬県
-                        <%}else if ("011".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("011".equals(session.getAttribute("KNC"))) {%>
                         埼木県
-                        <%}else if ("012".equals(session.getAttribute("KNC"))){ %>
+                        <%} else if ("012".equals(session.getAttribute("KNC"))) { %>
                         千葉県
-                        <%}else if ("013".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("013".equals(session.getAttribute("KNC"))) {%>
                         東京都
-                        <%}else if ("014".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("014".equals(session.getAttribute("KNC"))) {%>
                         神奈川県
-                        <%}else if ("015".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("015".equals(session.getAttribute("KNC"))) {%>
                         新潟県
-                        <%}else if ("016".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("016".equals(session.getAttribute("KNC"))) {%>
                         富士県
-                        <%}else if ("017".equals(session.getAttribute("KNC"))){ %>
+                        <%} else if ("017".equals(session.getAttribute("KNC"))) { %>
                         石川県
-                        <%}else if ("018".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("018".equals(session.getAttribute("KNC"))) {%>
                         福井県
-                        <%}else if ("019".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("019".equals(session.getAttribute("KNC"))) {%>
                         山梨県
-                        <%}else if ("020".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("020".equals(session.getAttribute("KNC"))) {%>
                         長野県
-                        <%}else if ("021".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("021".equals(session.getAttribute("KNC"))) {%>
                         岐阜県
-                        <%}else if ("022".equals(session.getAttribute("KNC"))){ %>
+                        <%} else if ("022".equals(session.getAttribute("KNC"))) { %>
                         靜岡県
-                        <%}else if ("023".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("023".equals(session.getAttribute("KNC"))) {%>
                         愛知県
-                        <%}else if ("024".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("024".equals(session.getAttribute("KNC"))) {%>
                         三重県
-                        <%}else if ("025".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("025".equals(session.getAttribute("KNC"))) {%>
                         滋賀県
-                        <%}else if ("026".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("026".equals(session.getAttribute("KNC"))) {%>
                         京都府
-                        <%}else if ("027".equals(session.getAttribute("KNC"))){ %>
+                        <%} else if ("027".equals(session.getAttribute("KNC"))) { %>
                         大阪府
-                        <%}else if ("028".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("028".equals(session.getAttribute("KNC"))) {%>
                         兵庫県
-                        <%}else if ("029".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("029".equals(session.getAttribute("KNC"))) {%>
                         奈良県
-                        <%}else if ("030".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("030".equals(session.getAttribute("KNC"))) {%>
                         和歌山県
-                        <%}else if ("031".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("031".equals(session.getAttribute("KNC"))) {%>
                         鳥取県
-                        <%}else if ("032".equals(session.getAttribute("KNC"))){ %>
+                        <%} else if ("032".equals(session.getAttribute("KNC"))) { %>
                         鳥根県
-                        <%}else if ("033".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("033".equals(session.getAttribute("KNC"))) {%>
                         岡山県
-                        <%}else if ("034".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("034".equals(session.getAttribute("KNC"))) {%>
                         広島県
-                        <%}else if ("035".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("035".equals(session.getAttribute("KNC"))) {%>
                         山口県
-                        <%}else if ("036".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("036".equals(session.getAttribute("KNC"))) {%>
                         德島県
-                        <%}else if ("037".equals(session.getAttribute("KNC"))){ %>
+                        <%} else if ("037".equals(session.getAttribute("KNC"))) { %>
                         香川県
-                        <%}else if ("038".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("038".equals(session.getAttribute("KNC"))) {%>
                         愛媛県
-                        <%}else if ("039".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("039".equals(session.getAttribute("KNC"))) {%>
                         高知県
-                        <%}else if ("040".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("040".equals(session.getAttribute("KNC"))) {%>
                         福岡県
-                        <%}else if ("041".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("041".equals(session.getAttribute("KNC"))) {%>
                         佐賀県
-                        <%}else if ("042".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("042".equals(session.getAttribute("KNC"))) {%>
                         長崎県
-                        <%}else if ("043".equals(session.getAttribute("KNC"))){ %>
+                        <%} else if ("043".equals(session.getAttribute("KNC"))) { %>
                         熊本県
-                        <%}else if ("044".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("044".equals(session.getAttribute("KNC"))) {%>
                         大分県
-                        <%}else if ("045".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("045".equals(session.getAttribute("KNC"))) {%>
                         宮崎県
-                        <%}else if ("046".equals(session.getAttribute("KNC"))){%>
+                        <%} else if ("046".equals(session.getAttribute("KNC"))) {%>
                         鹿児島県
-                        <%}else{%>
+                        <%} else {%>
                         沖繩県
                         <%} %>
                     </label>
@@ -439,9 +450,11 @@
                 <label>建物・部屋番号</label>
             </div>
             <div class="col-8 bg-lemonchiffon">
-                <label><%=session.getAttribute("JSKJ1")%></label>
+                <label><%=session.getAttribute("JSKJ1")%>
+                </label>
                 <hr>
-                <label><%=session.getAttribute("JSKJ2")%></label>
+                <label><%=session.getAttribute("JSKJ2")%>
+                </label>
             </div>
         </div>
         <br>
@@ -461,9 +474,11 @@
                 <label>建物・部屋番号</label>
             </div>
             <div class="col-8 bg-lemonchiffon">
-                <label><%=session.getAttribute("JSKN1")%></label>
+                <label><%=session.getAttribute("JSKN1")%>
+                </label>
                 <hr>
-                <label><%=session.getAttribute("JSKN2")%></label>
+                <label><%=session.getAttribute("JSKN2")%>
+                </label>
             </div>
         </div>
     </div>
@@ -483,21 +498,21 @@
             <div class="col-4 bg-lemonchiffon">
                 <div class="form-group">
                     <label>
-                        <%if ("1".equals(session.getAttribute("SPGTORKBN"))){%>
+                        <%if ("1".equals(session.getAttribute("SPGTORKBN"))) {%>
                         １０万
-                        <%}else if ("2".equals(session.getAttribute("SPGTORKBN"))){ %>
+                        <%} else if ("2".equals(session.getAttribute("SPGTORKBN"))) { %>
                         ３０万
-                        <%}else if ("3".equals(session.getAttribute("SPGTORKBN"))){%>
+                        <%} else if ("3".equals(session.getAttribute("SPGTORKBN"))) {%>
                         ５０万
-                        <%}else if ("4".equals(session.getAttribute("SPGTORKBN"))){%>
+                        <%} else if ("4".equals(session.getAttribute("SPGTORKBN"))) {%>
                         ７０万
-                        <%}else if ("5".equals(session.getAttribute("SPGTORKBN"))){%>
+                        <%} else if ("5".equals(session.getAttribute("SPGTORKBN"))) {%>
                         １００万
-                        <%}else if ("6".equals(session.getAttribute("SPGTORKBN"))){%>
+                        <%} else if ("6".equals(session.getAttribute("SPGTORKBN"))) {%>
                         １２０万
-                        <%}else if ("7".equals(session.getAttribute("SPGTORKBN"))){%>
+                        <%} else if ("7".equals(session.getAttribute("SPGTORKBN"))) {%>
                         １５０万
-                        <%}else if ("8".equals(session.getAttribute("SPGTORKBN"))){%>
+                        <%} else if ("8".equals(session.getAttribute("SPGTORKBN"))) {%>
                         ２００万
                         <%}%>
                     </label>
@@ -519,14 +534,14 @@
             <div class="col-4">
                 <div class="form-group">
                     <label><%
-                        if ("1".equals(session.getAttribute("SPGKBN"))){
+                        if ("1".equals(session.getAttribute("SPGKBN"))) {
                     %> 生計費<%
-                    }else if ("2".equals(session.getAttribute("SPGKBN"))){ %>
+                    } else if ("2".equals(session.getAttribute("SPGKBN"))) { %>
                         事業費<%
-                        }else if ("3".equals(session.getAttribute("SPGKBN"))){
+                        } else if ("3".equals(session.getAttribute("SPGKBN"))) {
                         %>
                         生計費・事業費決済<%
-                        }else {%>
+                        } else {%>
                         その他 <%
                             }
                         %></label>
@@ -548,23 +563,23 @@
             <div class="col-4 bg-lemonchiffon">
                 <div class="form-group">
                     <label>
-                        <%if ("1".equals(session.getAttribute("CSGKBN"))){%>
+                        <%if ("1".equals(session.getAttribute("CSGKBN"))) {%>
                         不要
-                        <%}else if ("2".equals(session.getAttribute("CSGKBN"))){ %>
+                        <%} else if ("2".equals(session.getAttribute("CSGKBN"))) { %>
                         １万
-                        <%}else if ("3".equals(session.getAttribute("CSGKBN"))){%>
+                        <%} else if ("3".equals(session.getAttribute("CSGKBN"))) {%>
                         ２万
-                        <%}else if ("4".equals(session.getAttribute("CSGKBN"))){%>
+                        <%} else if ("4".equals(session.getAttribute("CSGKBN"))) {%>
                         ３万
-                        <%}else if ("5".equals(session.getAttribute("CSGKBN"))){%>
+                        <%} else if ("5".equals(session.getAttribute("CSGKBN"))) {%>
                         ５万
-                        <%}else if ("6".equals(session.getAttribute("CSGKBN"))){%>
+                        <%} else if ("6".equals(session.getAttribute("CSGKBN"))) {%>
                         ７万
-                        <%}else if ("7".equals(session.getAttribute("CSGKBN"))){%>
+                        <%} else if ("7".equals(session.getAttribute("CSGKBN"))) {%>
                         １０万
-                        <%}else if ("8".equals(session.getAttribute("CSGKBN"))){%>
+                        <%} else if ("8".equals(session.getAttribute("CSGKBN"))) {%>
                         ２０万
-                        <%}else {%>
+                        <%} else {%>
                         ５０万 <%}%></label>
                     </label>
                 </div>
@@ -585,14 +600,14 @@
             <div class="col-4">
                 <div class="form-group">
                     <label><%
-                        if ("1".equals(session.getAttribute("TORKBN"))){
+                        if ("1".equals(session.getAttribute("TORKBN"))) {
                     %> 生計費融資<%
-                    }else if ("2".equals(session.getAttribute("TORKBN"))){ %>
+                    } else if ("2".equals(session.getAttribute("TORKBN"))) { %>
                         事業資金<%
-                        }else{
+                        } else {
                         %>
                         その他<%
-                        }
+                            }
                         %></label>
                 </div>
             </div>
@@ -611,7 +626,8 @@
                 </p>
             </div>
             <div class="col-5">
-                <label><%=session.getAttribute("DRIVERID")%></label>
+                <label><%=session.getAttribute("DRIVERID")%>
+                </label>
             </div>
             <div class="col-6"></div>
         </div>
@@ -625,7 +641,8 @@
                 </p>
             </div>
             <div class="col-4">
-                <label><%=session.getAttribute("KKHCD")%></label>
+                <label><%=session.getAttribute("KKHCD")%>
+                </label>
             </div>
             <div class="col-5"></div>
         </div>
@@ -640,14 +657,14 @@
             </div>
             <div class="col-9">
                 <label><%
-                    if ("1".equals(session.getAttribute("HNNHHUCD"))){
+                    if ("1".equals(session.getAttribute("HNNHHUCD"))) {
                 %> 申込後すぐに<%
-                }else if ("2".equals(session.getAttribute("HNNHHUCD"))){ %>
+                } else if ("2".equals(session.getAttribute("HNNHHUCD"))) { %>
                     後で再登録<%
-                    }else if ("3".equals(session.getAttribute("HNNHHUCD"))){
+                    } else if ("3".equals(session.getAttribute("HNNHHUCD"))) {
                     %>
                     郵送で登録<%
-                    }else {%>
+                    } else {%>
                     カードのお届けで <%
                         }
                     %></label>
@@ -664,11 +681,11 @@
             </div>
             <div class="col-4">
                 <label><%
-                    if ("1".equals(session.getAttribute("HGSUMK"))){
+                    if ("1".equals(session.getAttribute("HGSUMK"))) {
                 %> 有<%
-                }else{ %>
+                } else { %>
                     無<%
-                    }
+                        }
                     %></label>
             </div>
             <div class="col-5"></div>
@@ -684,9 +701,9 @@
             </div>
             <div class="col-4">
                 <label><%
-                    if ("11".equals(session.getAttribute("SYOKBN"))){
+                    if ("11".equals(session.getAttribute("SYOKBN"))) {
                 %> 有<%
-                }else{ %>
+                } else { %>
                     無<%
                         }
                     %></label>
@@ -704,9 +721,9 @@
             </div>
             <div class="col-4">
                 <label><%
-                    if ("1".equals(session.getAttribute("KZKMLFLG"))){
+                    if ("1".equals(session.getAttribute("KZKMLFLG"))) {
                 %> 有<%
-                }else{ %>
+                } else { %>
                     無<%
                         }
                     %></label>
@@ -726,12 +743,12 @@
                 <label>
 
                     <%
-                    if ("1".equals(session.getAttribute("CAMMLFLG"))){
-                %> 有<%
-                }else { %>
+                        if ("1".equals(session.getAttribute("CAMMLFLG"))) {
+                    %> 有<%
+                } else { %>
                     無<%
-                        }
-                    %></label>
+                    }
+                %></label>
             </div>
             <div class="col-5"></div>
         </div>
@@ -761,22 +778,22 @@
             </div>
             <div class="col-4 bg-lemonchiffon">
                 <label>
-                    <%if ("101".equals(session.getAttribute("gyocd"))){%>
+                    <%if ("101".equals(session.getAttribute("gyocd"))) {%>
                     農林水産
-                    <%}else if ("201".equals(session.getAttribute("gyocd"))){ %>
+                    <%} else if ("201".equals(session.getAttribute("gyocd"))) { %>
                     土木建築
-                    <%}else if ("301".equals(session.getAttribute("gyocd"))){%>
+                    <%} else if ("301".equals(session.getAttribute("gyocd"))) {%>
                     製造
-                    <%}else if ("401".equals(session.getAttribute("gyocd"))){%>
+                    <%} else if ("401".equals(session.getAttribute("gyocd"))) {%>
                     電気・ガス・水道
-                    <%}else if ("501".equals(session.getAttribute("gyocd"))){%>
+                    <%} else if ("501".equals(session.getAttribute("gyocd"))) {%>
                     運輸・通信
-                    <%}else if ("601".equals(session.getAttribute("gyocd"))){%>
+                    <%} else if ("601".equals(session.getAttribute("gyocd"))) {%>
                     無職
-                    <%}else{%>
+                    <%} else {%>
                     その他
                     <%} %>
-                   </label>
+                </label>
             </div>
             <div class="col-6 bg-lemonchiffon"></div>
         </div>
@@ -790,7 +807,8 @@
                 </P>
             </div>
             <div class="col-4">
-                <label><%=session.getAttribute("kms")%></label>
+                <label><%=session.getAttribute("kms")%>
+                </label>
             </div>
             <div class="col-6"></div>
         </div>
@@ -804,7 +822,8 @@
                 </p>
             </div>
             <div class="col-4">
-                <label><%=session.getAttribute("kmsdep")%></label>
+                <label><%=session.getAttribute("kmsdep")%>
+                </label>
             </div>
             <div class="col-6"></div>
         </div>
@@ -818,7 +837,8 @@
                 </p>
             </div>
             <div class="col-4">
-                <label><%=session.getAttribute("kmstel")%></label>
+                <label><%=session.getAttribute("kmstel")%>
+                </label>
             </div>
             <div class="col-6"></div>
         </div>
@@ -832,9 +852,11 @@
                 </p>
             </div>
             <div class="col-4">
-                <label><%=session.getAttribute("kmsjs1")%></label>
+                <label><%=session.getAttribute("kmsjs1")%>
+                </label>
                 <hr>
-                <label><%=session.getAttribute("kmsjs2")%></label>
+                <label><%=session.getAttribute("kmsjs2")%>
+                </label>
             </div>
             <div class="col-6"></div>
         </div>
@@ -849,7 +871,8 @@
             </div>
 
             <div class="col-2">
-                <label><%=session.getAttribute("nshym")%></label>
+                <label><%=session.getAttribute("nshym")%>
+                </label>
             </div>
             <div class="col-8">
             </div>
@@ -865,7 +888,8 @@
             </div>
             <div class="col-3">
                 <ul class="list-inline">
-                    <label><%=session.getAttribute("nsg")%></label></li>
+                    <label><%=session.getAttribute("nsg")%>
+                    </label></li>
                     <li class="list-inline-item">万円</li>
                 </ul>
             </div>

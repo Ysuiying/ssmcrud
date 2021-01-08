@@ -7,8 +7,38 @@
     <insert id="insertUsr" parameterType="com.po.USR">
 		insert into USR(CSTID,LOGINN,DISN,PASS,SER,TOKEN,KBN,MAIL,INSERTDTE,INSERTID,UPDATEDTE,UPDATEID,DELETEFLG,DELETEDTE)
 		values
-		(#{cstid},#{loginn},#{disn},#{pass},1,1,1,#{mail},SYSTIMESTAMP,1,SYSTIMESTAMP,1,1,SYSTIMESTAMP)
+		(#{cstid},#{loginn},#{disn},#{pass},#{ser},#{token},#{kbn},#{mail},SYSTIMESTAMP,1,SYSTIMESTAMP,1,1,SYSTIMESTAMP)
 	</insert>
+    <select id="selectUserByLoginn" resultType="com.po.USR">
+   select * from usr where LOGINN = #{loginn}
 
+	</select>
+    <select id="selectUserByMail" resultType="com.po.USR">
+   select * from usr where MAIL = #{mail}
+
+	</select>
+    <select id="selectUserByCstid" resultType="com.po.USR">
+   select * from usr where CSTID = #{cstid}
+
+	</select>
+
+    <update id="updatePass" parameterType="com.po.USR">
+        update USR
+        <set>
+            PASS = #{pass}
+        </set>
+        where CSTID = #{cstid}
+    </update>
+    <select id="selectNameByCstid" resultType="com.po.APP">
+    select * from app where substr(CSTID,13,16) = #{cstid};
+
+	</select>
+    <update id="changeser" parameterType="com.po.USR">
+        update USR
+        <set>
+            SER = #{ser}
+        </set>
+        where CSTID = #{cstid}
+    </update>
 
 </mapper>

@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html lang="en">
@@ -12,12 +11,14 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand" href="#">カードサイト</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-    <div class="collapse navbar-collapse" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item"> <a class="nav-link" href="#">お手続き <span class="sr-only"></span></a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">お問い合わせ</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">加盟店のお客様</a> </li>
+            <li class="nav-item"><a class="nav-link" href="#">お手続き <span class="sr-only"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#">お問い合わせ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">加盟店のお客様</a></li>
         </ul>
     </div>
 </nav>
@@ -28,7 +29,7 @@
 <form action="/jumptoWB01A11.action" method="post">
 
     <div class="container">
-        <div class="row text-center"> </div>
+        <div class="row text-center"></div>
         <hr>
         <div class="row card-header">ご家族について</div>
         <div class="container">
@@ -37,7 +38,8 @@
                     <p>
                     <ul class="list-inline">
                         <li class="list-inline-item">家族お名前</li>
-                        <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                        <li class="list-inline-item"><img class="card-img card-img-top"
+                                                          src="../../images/icon_required.gif" alt="必須"></li>
                     </ul>
                     </p>
                 </div>
@@ -65,8 +67,10 @@
                     <p>
                     <ul class="list-inline">
                         <li class="list-inline-item">家族お名前<br>
-                            フリガナ</li>
-                        <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                            フリガナ
+                        </li>
+                        <li class="list-inline-item"><img class="card-img card-img-top"
+                                                          src="../../images/icon_required.gif" alt="必須"></li>
                     </ul>
                     </p>
                 </div>
@@ -118,17 +122,20 @@
                     <p>
                     <ul class="list-inline">
                         <li class="list-inline-item">性別</li>
-                        <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                        <li class="list-inline-item"><img class="card-img card-img-top"
+                                                          src="../../images/icon_required.gif" alt="必須"></li>
                     </ul>
                     </p>
                 </div>
                 <div class="col-4 bg-lemonchiffon">
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input name="SEX" type="radio" class="custom-control-input" id="customRadio1" name="example1" checked="" value="1">
+                        <input name="SEX" type="radio" class="custom-control-input" id="customRadio1" name="example1"
+                               checked="" value="1">
                         <label class="custom-control-label" for="customRadio1">男性</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input name="SEX" type="radio" class="custom-control-input" id="customRadio2" name="example1" value="2">
+                        <input name="SEX" type="radio" class="custom-control-input" id="customRadio2" name="example1"
+                               value="2">
                         <label class="custom-control-label" for="customRadio2">女性</label>
                     </div>
                 </div>
@@ -143,13 +150,14 @@
                     <p>
                     <ul class="list-inline">
                         <li class="list-inline-item">業種</li>
-                        <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                        <li class="list-inline-item"><img class="card-img card-img-top"
+                                                          src="../../images/icon_required.gif" alt="必須"></li>
                     </ul>
                     </P>
                 </div>
                 <div class="col-4 bg-lemonchiffon">
                     <div class="form-group">
-                        <select name="KZKGYOCD" class="form-control" id="KZKGYOCD" >
+                        <select name="KZKGYOCD" class="form-control" id="KZKGYOCD">
                             <option value="101">農林水産</option>
                             <option value="201">土木建築</option>
                             <option value="301">製造</option>
@@ -160,7 +168,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="col-6 bg-lemonchiffon"> </div>
+                <div class="col-6 bg-lemonchiffon"></div>
             </div>
             <br>
             <div class="row">
@@ -174,7 +182,7 @@
                 <div class="col-4">
                     <input name="KZKKMS" type="text" class="form-control" placeholder="<例>株式会社　H">
                 </div>
-                <div class="col-6"> </div>
+                <div class="col-6"></div>
             </div>
             <br>
             <div class="row">
@@ -213,17 +221,18 @@
                     <p>
                     <ul class="list-inline">
                         <li class="list-inline-item">家族確認書類確認方法</li>
-                        <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                        <li class="list-inline-item"><img class="card-img card-img-top"
+                                                          src="../../images/icon_required.gif" alt="必須"></li>
                     </ul>
                     </p>
                 </div>
                 <div class="col-9">
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input name="KZKHHUCD" type="radio" class="custom-control-input" id="Radio8"  value="1">
+                        <input name="KZKHHUCD" type="radio" class="custom-control-input" id="Radio8" value="1">
                         <label class="custom-control-label" for="Radio8">申込後</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input name="KZKHHUCD" type="radio" class="custom-control-input" id="Radio10"  value="2">
+                        <input name="KZKHHUCD" type="radio" class="custom-control-input" id="Radio10" value="2">
                         <label class="custom-control-label" for="Radio10">郵送で登録</label>
                     </div>
                 </div>
@@ -232,7 +241,9 @@
         <hr>
         <div class="text-center">
             <div class="custom-control custom-radio custom-control-inline">
-                <p class="lead"> <button class="btn btn-danger btn-lg" type="submit">次へ進む</button> </p>
+                <p class="lead">
+                    <button class="btn btn-danger btn-lg" type="submit">次へ進む</button>
+                </p>
             </div>
         </div>
 

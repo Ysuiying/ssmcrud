@@ -1,23 +1,24 @@
-﻿
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+﻿<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>株式会社　H　カード</title>
-<!-- Bootstrap -->
-<link href="../../css/bootstrap-4.0.0.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>株式会社　H　カード</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap-4.0.0.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand" href="#">カードサイト</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-    <div class="collapse navbar-collapse" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item"> <a class="nav-link" href="#">お手続き <span class="sr-only"></span></a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">お問い合わせ</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">山田　さま</a> </li>
+            <li class="nav-item"><a class="nav-link" href="#">お手続き <span class="sr-only"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#">お問い合わせ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">山田　さま</a></li>
         </ul>
     </div>
 </nav>
@@ -26,16 +27,17 @@
     <P class="card-text">個人情報の変更申請</p>
 </div>
 <div class="container">
-    <div class="row text-center"> </div>
+    <div class="row text-center"></div>
     <hr>
     <div class="row card-header">登録情報</div>
     <div class="container">
-       <div class="row">
+        <div class="row">
             <div class="col-2 bg-aqua">
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">携帯電話</li>
-                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif"
+                                                      alt="必須"></li>
                 </ul>
                 </p>
             </div>
@@ -53,7 +55,8 @@
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">お名前</li>
-                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif"
+                                                      alt="必須"></li>
                 </ul>
                 </p>
             </div>
@@ -77,8 +80,10 @@
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">お名前<br>
-                        フリガナ</li>
-                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                        フリガナ
+                    </li>
+                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif"
+                                                      alt="必須"></li>
                 </ul>
                 </p>
             </div>
@@ -128,13 +133,14 @@
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">住居種別</li>
-                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif"
+                                                      alt="必須"></li>
                 </ul>
                 </P>
             </div>
             <div class="col-4 bg-lemonchiffon">
                 <div class="form-group">
-                    <select class="form-control" >
+                    <select class="form-control">
                         <option>本人持家</option>
                         <option>家族持家</option>
                         <option>借家・賃貸マンション</option>
@@ -142,7 +148,7 @@
                     </select>
                 </div>
             </div>
-            <div class="col-6 bg-lemonchiffon"> </div>
+            <div class="col-6 bg-lemonchiffon"></div>
         </div>
         <br>
         <div class="row">
@@ -156,7 +162,7 @@
             <div class="col-4">
                 <input type="text" class="form-control" placeholder="<例>03-0000-1111" value="03-0000-1111">
             </div>
-            <div class="col-6"> </div>
+            <div class="col-6"></div>
         </div>
         <br>
         <div class="row">
@@ -164,7 +170,8 @@
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">郵便番号</li>
-                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif"
+                                                      alt="必須"></li>
                 </ul>
                 </p>
             </div>
@@ -179,13 +186,14 @@
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">都・道・府・県</li>
-                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif"
+                                                      alt="必須"></li>
                 </ul>
                 </p>
             </div>
             <div class="col-4 bg-lemonchiffon">
                 <div class="form-group">
-                    <select class="form-control" >
+                    <select class="form-control">
                         <option>北海道</option>
                         <option>東京都</option>
                         <option>大阪府</option>
@@ -202,7 +210,8 @@
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">住所</li>
-                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif"
+                                                      alt="必須"></li>
                 </ul>
                 </p>
             </div>
@@ -225,7 +234,8 @@
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">住所フリガナ</li>
-                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif"
+                                                      alt="必須"></li>
                 </ul>
                 </p>
             </div>
@@ -236,7 +246,8 @@
                     建物・部屋番号</p>
             </div>
             <div class="col-8 bg-lemonchiffon">
-                <input type="text" class="form-control" placeholder="<例>トウキョウトシナガワくニシシナガワ１－１－１" value="トウキョウトシナガワくニシシナガワ１－１－１">
+                <input type="text" class="form-control" placeholder="<例>トウキョウトシナガワくニシシナガワ１－１－１"
+                       value="トウキョウトシナガワくニシシナガワ１－１－１">
                 <hr>
                 <input type="text" class="form-control" placeholder="<例>シナガワビル　１０１シツ" value="シナガワビル　１０１シツ">
             </div>
@@ -268,7 +279,8 @@
                 </p>
             </div>
             <div class="col-4">
-                <input type="text" class="form-control" placeholder="<例>12345678901234567890" value="12345678901234567890">
+                <input type="text" class="form-control" placeholder="<例>12345678901234567890"
+                       value="12345678901234567890">
             </div>
             <div class="col-5"></div>
         </div>
@@ -412,13 +424,14 @@
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">業種</li>
-                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif"
+                                                      alt="必須"></li>
                 </ul>
                 </P>
             </div>
             <div class="col-4 bg-lemonchiffon">
                 <div class="form-group">
-                    <select class="form-control" >
+                    <select class="form-control">
                         <option>農林水産</option>
                         <option>土木建築</option>
                         <option>製造</option>
@@ -429,10 +442,10 @@
                     </select>
                 </div>
             </div>
-            <div class="col-6 bg-lemonchiffon"> </div>
+            <div class="col-6 bg-lemonchiffon"></div>
         </div>
         <br>
-    <div class="row">
+        <div class="row">
             <div class="col-2 bg-aqua">
                 <p>
                 <ul class="list-inline">
@@ -443,7 +456,7 @@
             <div class="col-4">
                 <input type="text" class="form-control" placeholder="<例>株式会社　H" value="株式会社　H">
             </div>
-            <div class="col-6"> </div>
+            <div class="col-6"></div>
         </div>
         <br>
         <div class="row">
@@ -505,7 +518,7 @@
             <div class="col-8">
             </div>
         </div>
-         <br>
+        <br>
         <div class="row">
             <div class="col-2 bg-aqua">
                 <p>
@@ -514,11 +527,12 @@
                 </ul>
                 </p>
             </div>
-            <div class="col-3">                
+            <div class="col-3">
                 <ul class="list-inline">
-                    <li class="list-inline-item"><input type="text" class="form-control" placeholder="<例>320" value="320"></li>
+                    <li class="list-inline-item"><input type="text" class="form-control" placeholder="<例>320"
+                                                        value="320"></li>
                     <li class="list-inline-item">万円</li>
-                </ul>                
+                </ul>
             </div>
             <div class="col-7">
             </div>
@@ -532,7 +546,8 @@
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">家族お名前</li>
-                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif"
+                                                      alt="必須"></li>
                 </ul>
                 </p>
             </div>
@@ -561,8 +576,10 @@
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">家族お名前<br>
-                        フリガナ</li>
-                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                        フリガナ
+                    </li>
+                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif"
+                                                      alt="必須"></li>
                 </ul>
                 </p>
             </div>
@@ -614,7 +631,8 @@
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">性別</li>
-                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif"
+                                                      alt="必須"></li>
                 </ul>
                 </p>
             </div>
@@ -639,13 +657,14 @@
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">業種</li>
-                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif" alt="必須"></li>
+                    <li class="list-inline-item"><img class="card-img card-img-top" src="../../images/icon_required.gif"
+                                                      alt="必須"></li>
                 </ul>
                 </P>
             </div>
             <div class="col-4 bg-lemonchiffon">
                 <div class="form-group">
-                    <select class="form-control" >
+                    <select class="form-control">
                         <option>農林水産</option>
                         <option>土木建築</option>
                         <option>製造</option>
@@ -656,7 +675,7 @@
                     </select>
                 </div>
             </div>
-            <div class="col-6 bg-lemonchiffon"> </div>
+            <div class="col-6 bg-lemonchiffon"></div>
         </div>
         <br>
         <div class="row">
@@ -670,7 +689,7 @@
             <div class="col-4">
                 <input type="text" class="form-control" placeholder="<例>株式会社　H" value="株式会社　H">
             </div>
-            <div class="col-6"> </div>
+            <div class="col-6"></div>
         </div>
         <br>
         <div class="row">
@@ -704,10 +723,10 @@
     <hr>
     <div class="text-center">
         <div class="custom-control custom-radio custom-control-inline">
-            <p class="lead"> <a class="btn btn-danger btn-lg" href="#" role="button">戻る</a> </p>
+            <p class="lead"><a class="btn btn-danger btn-lg" href="#" role="button">戻る</a></p>
         </div>
         <div class="custom-control custom-radio custom-control-inline">
-            <p class="lead"> <a class="btn btn-danger btn-lg" href="#" role="button">申請</a> </p>
+            <p class="lead"><a class="btn btn-danger btn-lg" href="#" role="button">申請</a></p>
         </div>
     </div>
     <div class="row">
@@ -716,9 +735,9 @@
         </div>
     </div>
 </div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="../../js/jquery-3.2.1.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="../../js/popper.min.js"></script>
 <script src="../../js/bootstrap-4.0.0.js"></script>
 </body>
