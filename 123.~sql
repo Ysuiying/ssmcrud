@@ -1,0 +1,40 @@
+select PRIKEY_tb_seq.nextval from dual
+
+SELECT LPAD(TO_CHAR(PRIKEY_tb_seq.nextval),4,'0') FROM DUAL
+
+create sequence PRIKEY_tb_seq
+          minvalue 1 maxvalue 9999
+          increment by 1
+          start with 1;
+          
+          drop sequence  PRIKEY_tb_seq
+         
+          
+          
+          create or replace trigger bmi_tb_tri
+          before insert on PRIKEY
+          for each row
+          begin
+          select PRIKEY_tb_seq.nextval into:new.APPNUM from dual;
+          end;
+          select * from app
+    
+          drop table APP
+          select * from PRIKEY
+          
+         CREATE TABLE PRIKEY (
+        APPNUM NVARCHAR2(4) NOT NULL primary key,
+        APPVAL NVARCHAR2(1) NOT NULL
+);
+insert into PRIKEY(APPVAL) VALUES('1');
+SELECT * FROM APP
+drop table PRIKEY
+            update APP set
+    
+            BANKCD = 
+            '123'
+
+        where APPCD = '1998082411500025'
+select BANKcD from app
+
+           

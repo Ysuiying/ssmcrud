@@ -42,6 +42,18 @@
 		select SEIKJ from APP where substr(CSTID,13,16) = ${_parameter}
 
 	</select>
+    <select id="findAppBycstid" resultType="com.po.APP">
 
+       select * from APP where substr(CSTID,13,16) = ${cstid}
+
+    </select>
+
+    <update id="updateCammlflg">
+        update APP
+        <set>
+          CAMMLFLG = #{cammlflg}
+        </set>
+        where APPCD = #{appcd}
+    </update>
 
 </mapper>

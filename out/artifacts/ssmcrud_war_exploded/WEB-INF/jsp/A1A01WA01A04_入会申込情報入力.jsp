@@ -514,7 +514,7 @@
         $("#row1").prop("hidden", "hidden");
         $('#row2').prop("hidden", "hidden");
         $('#row3').prop("hidden", "hidden");
-       <% } %>
+        <% } %>
 
         var telFlag = false;
         var postFlag = false;

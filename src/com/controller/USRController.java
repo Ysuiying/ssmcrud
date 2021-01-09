@@ -67,5 +67,17 @@ public class USRController {
         return "B1C01WM01_会員機能一覧";
     }
 
+    @RequestMapping(value = "/jumptoChangeCammlflg.action")
+    public String jumpChangeCammlflg(HttpServletRequest request) {
+
+        return "B1A01WC11A01_キャンペーンメールの設定変更";
+    }
+
+    @RequestMapping(value = "/jumptoSkgkkktbk.action")
+    public String jumptoSkgkkktbk(HttpServletRequest request) {
+
+        return "B1A01WD01A21_分割払い年間お支払予定表";
+    }
+
 
 }

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 @Controller
-public class APPWC01 {
+public class APPWC01Controller {
     @Autowired
     private APPService appService;
 

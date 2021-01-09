@@ -46,6 +46,13 @@ public class LoginController {
                     } else if ("3".equals(usr1.getSer())) {
                         session.setAttribute("ser1", "なし");
                     }
+                    APP app = appService.findAppBycstid(usr1);
+                    System.out.println("***"+app.getCammlflg()+"***"+app.getCstid()+"*"+usr1.getCstid());
+                    if("1".equals(app.getCammlflg())){
+                        session.setAttribute("cammlflg","有");
+                    }else if("2".equals(app.getCammlflg())){
+                        session.setAttribute("cammlflg","無");
+                    }
                     return "A1A01WA01A01_入会申込情報入力";
                 } else {
                     session.setAttribute("msg", "密码有误");

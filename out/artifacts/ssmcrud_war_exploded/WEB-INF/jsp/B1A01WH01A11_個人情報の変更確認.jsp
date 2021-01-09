@@ -1,23 +1,24 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>株式会社　H　カード</title>
-<!-- Bootstrap -->
-<link href="../../css/bootstrap-4.0.0.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>株式会社　H　カード</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap-4.0.0.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand" href="#">カードサイト</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-    <div class="collapse navbar-collapse" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item"> <a class="nav-link" href="#">お手続き <span class="sr-only"></span></a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">お問い合わせ</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">山田　さま</a> </li>
+            <li class="nav-item"><a class="nav-link" href="#">お手続き <span class="sr-only"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#">お問い合わせ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">山田　さま</a></li>
         </ul>
     </div>
 </nav>
@@ -26,7 +27,7 @@
     <P class="card-text">個人情報照会</p>
 </div>
 <div class="container">
-    <div class="row text-center"> </div>
+    <div class="row text-center"></div>
     <hr>
     <div class="row card-header">登録情報</div>
     <div class="container">
@@ -74,7 +75,8 @@
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">お名前<br>
-                        フリガナ</li>
+                        フリガナ
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -112,7 +114,7 @@
                 <hr>
                 <label>TAROU</label>
             </div>
-            <div class="col-6"> </div>
+            <div class="col-6"></div>
         </div>
     </div>
     <hr>
@@ -131,7 +133,7 @@
                     <label>本人持家</label>
                 </div>
             </div>
-            <div class="col-6 bg-lemonchiffon"> </div>
+            <div class="col-6 bg-lemonchiffon"></div>
         </div>
         <br>
         <div class="row">
@@ -145,7 +147,7 @@
             <div class="col-4">
                 <label>03-0000-1111</label>
             </div>
-            <div class="col-6"> </div>
+            <div class="col-6"></div>
         </div>
         <br>
         <div class="row">
@@ -343,10 +345,10 @@
             </div>
             <div class="col-4 bg-lemonchiffon">
                 <lable>
-                製造
-                </label>
+                    製造
+                    </label>
             </div>
-            <div class="col-6 bg-lemonchiffon"> </div>
+            <div class="col-6 bg-lemonchiffon"></div>
         </div>
         <br>
         <div class="row">
@@ -360,7 +362,7 @@
             <div class="col-4">
                 <label>株式会社　H</label>
             </div>
-            <div class="col-6"> </div>
+            <div class="col-6"></div>
         </div>
         <br>
         <div class="row">
@@ -418,7 +420,7 @@
             <div class="col-2">
                 <label>201810</label>
             </div>
-            <div class="col-8"> </div>
+            <div class="col-8"></div>
         </div>
         <br>
         <div class="row">
@@ -436,7 +438,7 @@
                     <li class="list-inline-item">万円</li>
                 </ul>
             </div>
-            <div class="col-7"> </div>
+            <div class="col-7"></div>
         </div>
     </div>
     <hr>
@@ -467,7 +469,8 @@
                 <p>
                 <ul class="list-inline">
                     <li class="list-inline-item">家族お名前<br>
-                        フリガナ</li>
+                        フリガナ
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -503,7 +506,7 @@
                 <hr>
                 <label>YUUKI</label>
             </div>
-            <div class="col-6"> </div>
+            <div class="col-6"></div>
         </div>
         <br>
         <div class="row">
@@ -536,7 +539,7 @@
                     <label>製造</label>
                 </div>
             </div>
-            <div class="col-6 bg-lemonchiffon"> </div>
+            <div class="col-6 bg-lemonchiffon"></div>
         </div>
         <br>
         <div class="row">
@@ -550,7 +553,7 @@
             <div class="col-4">
                 <label>株式会社　H</label>
             </div>
-            <div class="col-6"> </div>
+            <div class="col-6"></div>
         </div>
         <br>
         <div class="row">
@@ -583,10 +586,10 @@
     </div>
     <div class="text-center">
         <div class="custom-control custom-radio custom-control-inline">
-            <p class="lead"> <a class="btn btn-danger btn-lg" href="#" role="button">戻る</a> </p>
+            <p class="lead"><a class="btn btn-danger btn-lg" href="#" role="button">戻る</a></p>
         </div>
         <div class="custom-control custom-radio custom-control-inline">
-            <p class="lead"> <a class="btn btn-danger btn-lg" href="#" role="button">確定</a> </p>
+            <p class="lead"><a class="btn btn-danger btn-lg" href="#" role="button">確定</a></p>
         </div>
     </div>
     <div class="row">
@@ -595,9 +598,9 @@
         </div>
     </div>
 </div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="../../js/jquery-3.2.1.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="../../js/popper.min.js"></script>
 <script src="../../js/bootstrap-4.0.0.js"></script>
 </body>

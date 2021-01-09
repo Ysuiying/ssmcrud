@@ -2,6 +2,8 @@ package com.service;
 
 import com.dao.APPDao;
 import com.po.APP;
+import com.po.USR;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -52,5 +54,14 @@ public class APPServiceImpl implements APPService {
         return appDao.selectNameBycstid(cstid);
     }
 
+    @Override
+    public APP findAppBycstid(USR usr) {
+        return appDao.findAppBycstid(usr);
+    }
+
+    @Override
+    public void updateCammlflg(@Param("appcd")String appcd, @Param("cammlflg")String cammlflg){
+        appDao.updateCammlflg(appcd,cammlflg);
+    }
 
 }

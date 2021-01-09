@@ -121,6 +121,15 @@
                     </li>
                 </ul>
             </div>
+            <div class="col-lg-4 d-md-none d-lg-block">
+                <ul class="list-unstyled">
+                    <li class="media">
+                        <div class="media-body">
+                            <a class="nav-link" href="/jumptoChangeCammlflg.action">キャンペーンメールの設定変更</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>

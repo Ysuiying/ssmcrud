@@ -26,6 +26,7 @@
 <div class="alert-danger text-center">
     <P class="card-text">キャンペーンメール設定変更</p>
 </div>
+<form action="/ChangeCamm.action" method="post">
 <div class="container">
     <div class="row text-center"></div>
     <hr>
@@ -39,7 +40,7 @@
             </p>
         </div>
         <div class="col-4 bg-lemonchiffon">
-            <label>有</label>
+            <label><%=session.getAttribute("cammlflg")%></label>
         </div>
         <div class="col-5 bg-lemonchiffon"></div>
     </div>
@@ -54,11 +55,11 @@
         </div>
         <div class="col-4 bg-lemonchiffon">
             <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" class="custom-control-input" id="radio1" name="mail">
+                <input type="radio" class="custom-control-input" id="radio1" name="cammlflg" value="1">
                 <label class="custom-control-label" for="radio1">有</label>
             </div>
             <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" class="custom-control-input" id="radio2" name="mail">
+                <input type="radio" class="custom-control-input" id="radio2" name="cammlflg" value="2">
                 <label class="custom-control-label" for="radio2">無</label>
             </div>
         </div>
@@ -67,16 +68,17 @@
     <hr>
     <div class="text-center">
         <div class="custom-control custom-radio custom-control-inline">
-            <p class="lead"><a class="btn btn-danger btn-lg" href="#" role="button">変更</a></p>
+            <p class="lead"><button type="submit" class="btn btn-danger btn-lg">変更</button></p>
         </div>
     </div>
+
     <div class="row">
         <div class="text-center col-lg-6 offset-lg-3">
             <p>Copyright &copy; H &middot; All Rights Reserved &middot;</p>
         </div>
     </div>
 </div>
-</div>
+</form>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="../../js/jquery-3.2.1.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
